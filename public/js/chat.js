@@ -5,6 +5,7 @@ const $messageFormInput = $messageForm.querySelector('input')
 const $messageFormButton = $messageForm.querySelector('button')
 const $sendLocationButton = document.querySelector('#send-location')
 const $messages = document.querySelector('#messages')
+const $chatRoomOption = document.querySelector('#chat-room-option')
 
 //Templates
 const messageTemplate = document.querySelector('#message-template').innerHTML
@@ -38,7 +39,7 @@ const autoscroll = () => {
 }
 
 socket.on('message', (message) => {
-    console.log(message)
+    // console.log(message)
     const html = Mustache.render(messageTemplate, {
         username: message.username,
         message: message.text,
