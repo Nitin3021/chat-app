@@ -26,11 +26,10 @@
     </div>
 
     <script id="chat-room" type="text/html">
+            <option disabled selected>Select Room</option>
             {{#rooms}}
-                <option selected="selected">None</option>
                 <option value="{{roomName}}">{{roomName}}</option>
             {{/rooms}}
-        </select>
     </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"></script>

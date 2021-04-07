@@ -16,10 +16,4 @@ socket.on('getAllRooms', ({ rooms }) => {
 document.getElementById('chat-room-option').addEventListener('change', function() {
     $chatRoomFormInput.value = this.value
     $chatRoomFormInput.readOnly = true
-
-    if (this.value === 'None')
-    {
-        $chatRoomFormInput.value = ''
-        $chatRoomFormInput.readOnly = false
-    }
 })

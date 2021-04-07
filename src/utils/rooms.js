@@ -3,11 +3,9 @@ const rooms = []
 const addRoom = ({ roomName }) => {
     roomName = roomName.trim().toLowerCase()
 
-    const existingRoom = rooms.filter((room) => {
-        room.roomName === roomName
-    })
+    const existingRoom = rooms.find((room) => room.roomName === roomName)
 
-    if (existingRoom.length === 0) {
+    if (!existingRoom) {
         const room = { roomName } 
         rooms.push(room)
     }
