@@ -5,7 +5,7 @@ const socketio = require('socket.io')
 const Filter = require('bad-words')
 const { generateMessage, generateLocationMessage } = require('./utils/messages')
 const { addUser, removeUser, getUser, getUsersInRoom } = require('./utils/users')
-const { addRoom, getRooms } = require('./utils/rooms')
+const { addRoom, getRooms, removeRoom } = require('./utils/rooms')
 
 const app = express()
 const server = http.createServer(app)
@@ -67,6 +67,10 @@ io.on('connection', (socket) => {
                 room: user.room,
                 users: getUsersInRoom(user.room)
             })
+            
+            if (getUsersInRoom(user.room).length === 0) {
+                removeRoom(user.room)
+            }
         }
     })
 

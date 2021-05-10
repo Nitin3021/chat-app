@@ -15,7 +15,12 @@ const getRooms = () => {
     return rooms
 }
 
+const removeRoom = (room) => {
+    rooms.pop(room)
+}
+
 module.exports = {
     addRoom,
-    getRooms
+    getRooms,
+    removeRoom
 }
