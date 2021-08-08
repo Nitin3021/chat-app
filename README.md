@@ -3,8 +3,8 @@
 ## Overview
 Welcome to one of my personal projects! As the project name makes it clear, the idea behind this project is to build a realtime application that will allow users to chat with eachother on a public room. This app has been built using NodeJS. User can create their own rooms or they can also join an existing room by selecting from the dropdown menu in the login page.
 
-![screenshot]()
-![screenshot]()
+![screenshot](https://github.com/Nitin3021/chat-app/blob/c28f0b1d8d4a6c2d5839dbbf141f07b9583058c6/public/img/git_repo_1.JPG)
+![screenshot](https://github.com/Nitin3021/chat-app/blob/c28f0b1d8d4a6c2d5839dbbf141f07b9583058c6/public/img/git_repo_2.JPG)
 
 ## Features
 
